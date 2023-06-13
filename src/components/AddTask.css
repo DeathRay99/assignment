@@ -1,0 +1,47 @@
+.task_info{
+    border: 1px solid rgba(0, 0, 0, 0.215);
+    padding: 12px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgb(250, 250, 250);
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    /* flex-wrap: wrap */
+}
+/* .task_info>div{
+    padding: ;
+} */
+.task_info_headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.task_info_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.task_info_desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task_info_footer>button{
+    background-color: rgba(153, 0, 255, 0.872);
+    border: 1px solid grey;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: large;
+}
+.task_info_footer>button:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    cursor: pointer;
+}

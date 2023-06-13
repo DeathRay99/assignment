@@ -1,0 +1,94 @@
+.taskdetails {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.task-container {
+  border: 3px solid;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(250, 250, 250);
+  /* background-color: blueviolet; */
+}
+.task-pri1 {
+  border-color: rgba(68, 255, 0, 0.929);
+}
+.task-pri2 {
+  border-color: #ffff00;
+}
+.task-pri3 {
+  border-color: red;
+}
+.task-desc:before {
+  content: '"';
+}
+.task-desc:after{
+  content: '"';
+}
+.task-desc{
+    /* text-align: center; */
+    width: 33%;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+
+}
+#task-title, #task-due,#task-priority{
+  font-size: x-large;
+  color: rgb(143, 11, 166);
+  font-weight: bolder;
+}
+#task-due{
+  color: rgb(237, 118, 20);
+}
+#task-priority{
+  color: rgb(31, 122, 211);
+}
+.taskdetails2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.completed {
+  background-color: lightgray;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.delbtn,.donbtn{
+  background-color: rgba(240, 37, 37, 0.872);
+  border: 1px solid grey;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  width: fit-content;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  font-size: medium;
+}
+
+.delbtn:hover,.donbtn:hover{
+  transform: scale(1.1);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+.donbtn{
+  background-color: rgb(40, 227, 40);
+  margin-left: 5px;
+  padding: 6px;
+}
+.action-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: none;
+  transform: none;
+  pointer-events: none;
+  /* Add any additional styling you want for disabled state */
+}
